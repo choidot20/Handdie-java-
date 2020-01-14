@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.swalloow.mydaummap">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 블루투스 기능을 사용하기 위해 필요한 권한입니다. -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-feature android:required="true" android:name="android.hardware.bluetooth_le"/> <!--BLE 지원하지 않는 기기에서도 사용하게 하려면 true를 false로 바꿔주면 됌-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".weather"/>
+        <activity android:name=".main"/>
+        <activity android:name=".advice"/>
+        <activity android:name=".signup"/>
+        <activity android:name=".score_main"/>
+        <activity android:name=".score_make"/>
+        <activity android:name=".score_user"/>
+        <activity android:name=".map"/>
+        <activity android:name=".beacon_main"/>
+        <activity android:name=".beacon_recoranging"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <service android:name="com.perples.recosdk.RECOBeaconService" />
+    </application>
+
+</manifest>

@@ -1,0 +1,94 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:onClick="onClicksingup">
+
+    <ImageView
+        android:id="@+id/textView_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/main_title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="25dp"
+        android:id="@+id/login_textView_EM"
+        android:layout_below="@id/textView_Title"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_editText_EM"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/textView_Title"
+        android:layout_toRightOf="@id/login_textView_EM"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@id/login_textView_EM"
+        android:inputType="text"
+        android:layout_alignParentEnd="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P    W"
+        android:textSize="25dp"
+        android:id="@+id/textView_PW"
+        android:layout_below="@id/login_textView_EM"
+        android:layout_alignLeft="@id/login_textView_EM"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_editText_PW"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="textPassword"
+        android:layout_below="@id/login_editText_EM"
+        android:layout_alignLeft="@id/login_editText_EM"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로      그      인"
+        android:textSize="30dp"
+        android:id="@+id/button_Login"
+        android:layout_below="@+id/login_editText_PW"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:onClick="onClickmain" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/find"
+        android:id="@+id/textView_Find"
+        android:background="#000000"
+        android:layout_below="@+id/button_Login"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@id/textView_PW"
+        android:scaleType="centerCrop"  />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/join"
+        android:id="@+id/textView_Join"
+        android:background="#000000"
+        android:onClick="onClicksignup"
+        android:scaleType="centerCrop"
+        android:layout_alignTop="@+id/textView_Find"
+        android:layout_alignEnd="@+id/login_editText_PW" />
+
+</RelativeLayout>

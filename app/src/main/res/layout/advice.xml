@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[Field]"
+        android:textSize="15pt"
+        android:textColor="#000000"
+        android:typeface="normal"
+        android:id="@+id/field"
+        android:layout_above="@+id/field_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15pt"
+        android:textColor="#000000"
+        android:typeface="normal"
+        android:id="@+id/field_name"
+        android:layout_above="@+id/field_fairway" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/field_fairway"
+        android:src="@drawable/fairway"
+        android:visibility="visible"
+        android:layout_above="@+id/club"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/field_green"
+        android:src="@drawable/green"
+        android:visibility="invisible"
+        android:layout_above="@+id/club"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/field_hazard"
+        android:src="@drawable/hazard"
+        android:visibility="invisible"
+        android:layout_above="@+id/club"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/field_rough"
+        android:src="@drawable/rough"
+        android:visibility="invisible"
+        android:layout_above="@+id/club"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/field_sand"
+        android:src="@drawable/sand"
+        android:visibility="invisible"
+        android:layout_above="@+id/club"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/field_tea"
+        android:src="@drawable/tea"
+        android:visibility="invisible"
+        android:layout_above="@+id/club"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="7pt"
+        android:textColor="#000000"
+        android:typeface="normal"
+        android:id="@+id/field_result"
+        android:layout_alignTop="@id/field_fairway"
+        android:layout_toRightOf="@id/field_fairway"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15pt"
+        android:textColor="#000000"
+        android:typeface="normal"
+        android:id="@+id/club_number"
+        android:layout_above="@+id/club_wood"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[Club]"
+        android:textSize="15pt"
+        android:textColor="#000000"
+        android:typeface="normal"
+        android:id="@+id/club"
+        android:layout_above="@id/club_number"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="10pt"
+        android:textColor="#000000"
+        android:typeface="normal"
+        android:id="@+id/club_type"
+        android:layout_toRightOf="@id/club_number"
+        android:layout_alignTop="@id/club_number" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/club_wood"
+        android:src="@drawable/wood"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/club_iron"
+        android:src="@drawable/iron"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/club_putter"
+        android:src="@drawable/putter"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="7pt"
+        android:textColor="#000000"
+        android:typeface="normal"
+        android:id="@+id/club_result"
+        android:layout_alignTop="@id/club_wood"
+        android:layout_toRightOf="@id/club_wood"/>
+</RelativeLayout>

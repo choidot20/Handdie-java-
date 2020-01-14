@@ -1,0 +1,67 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_EM"
+        android:hint="이메일"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="text"
+        android:layout_marginTop="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_PW"
+        android:hint="비밀번호"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="textPassword"
+        android:layout_below="@+id/editText_EM"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_RPW"
+        android:hint="비밀번호 재확인"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="textPassword"
+        android:layout_below="@+id/editText_PW"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_NAME"
+        android:hint="이름"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="text"
+        android:layout_below="@+id/editText_RPW"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_PHON"
+        android:hint="휴대전화번호"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="number"
+        android:layout_below="@+id/editText_NAME"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가입하기"
+        android:id="@+id/button"
+        android:onClick="insert_onClick"
+        android:layout_below="@+id/editText_PHON"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
